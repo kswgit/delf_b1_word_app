@@ -75,7 +75,7 @@ export default class Swipe extends Component {
       rerender: false,
     }
   }
-  componentDidMount() {
+  componentWillMount() {
     Promise.all([
       axios.get("https://raw.githubusercontent.com/kswgit/wordset/master/delf_b1_fr.json"),
       axios.get("https://raw.githubusercontent.com/kswgit/wordset/master/delf_b1_ko.json")
